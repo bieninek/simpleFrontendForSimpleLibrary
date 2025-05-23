@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kategorie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--
+  <h1><marquee behavior="scroll" direction="left">System Zarządzania Biblioteką</marquee></h1>
+  <span class="blinking">Witamy w systemie bibliotecznym!</span>
+-->
+  <!-- Górna ramka z linkami -->
+  <div id="top-bar">
+    <a href="categories.html">Kategorie</a> |
+    <a href="books.html">Książki</a> |
+    <a href="authors.html">Autorzy</a> |
+    <a href="members.html">Czytelnicy</a> |
+    <a href="borrowings.html">Wypożyczenia</a> |
+    <a href="publishers.html">Wydawcy</a>
+  </div>  
+
+  <!-- Form to add new categories -->
+  <form id="category-form">
+    <label>Nazwa kategorii: <input type="text" id="name" placeholder="Nazwa kategorii" required /></label><br><br>
+    <button type="submit">Dodaj kategorię</button>
+  </form>
+  
+  <!-- Category list -->
+  <div id="list-wrapper">
+    <ul id="category-list"></ul>
+  </div>
+
+  <script src="categories.js"></script>
+</body>
+</html>

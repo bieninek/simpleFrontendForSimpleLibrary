@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Członkowie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--
+  <h1><marquee behavior="scroll" direction="left">System Zarządzania Biblioteką</marquee></h1>
+  <span class="blinking">Witamy w systemie bibliotecznym!</span>
+-->
+  <!-- Górna ramka z linkami -->
+  <div id="top-bar">
+    <a href="categories.html">Kategorie</a> |
+    <a href="books.html">Książki</a> |
+    <a href="authors.html">Autorzy</a> |
+    <a href="members.html">Czytelnicy</a> |
+    <a href="borrowings.html">Wypożyczenia</a> |
+    <a href="publishers.html">Wydawcy</a>
+  </div>
+
+
+  <!-- Form to add new members -->
+  <form id="member-form">
+    <label>Imię: <input type="text" id="first_name" placeholder="Imię" required /></label><br><br>
+    <label>Nazwisko: <input type="text" id="last_name" placeholder="Nazwisko" required /></label><br><br>
+    <label>Email: <input type="email" id="email" placeholder="Email" required /></label><br><br>
+	<label>Telefon: <input type="tel" id="phone" placeholder="Telefon" required /></label><br><br>
+	<label>Adres: <input type="text" id="address" placeholder="Adres" required /></label><br><br>
+	<button type="submit">Dodaj członka</button>
+  </form>
+  
+  <!-- Form to change the member's status -->
+  <form id="statusForm">
+    <label for="memberSelect">Wybierz członka:</label><br>
+    <select id="memberSelect" required>
+      <option value="">-- Wybierz członka --</option>
+    </select><br><br>
+
+    <label for="status">Nowy status:</label><br>
+    <select id="status" required>
+      <option value="active">Aktywny</option>
+      <option value="expired">Wygasły</option>
+      <option value="suspended">Zawieszony</option>
+    </select><br><br>
+
+    <button type="submit">Aktualizuj status</button>
+  </form>
+
+
+  <!-- Member list -->
+  <div id="list-wrapper">
+    <ul id="member-list"></ul>
+  </div>
+
+  <script src="members.js"></script>
+</body>
+</html>

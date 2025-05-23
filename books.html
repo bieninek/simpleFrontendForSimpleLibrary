@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Książki</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--
+  <h1><marquee behavior="scroll" direction="left">System Zarządzania Biblioteką</marquee></h1>
+  <span class="blinking">Witamy w systemie bibliotecznym!</span>
+-->
+  <!-- Górna ramka z linkami -->
+  <div id="top-bar">
+    <a href="categories.html">Kategorie</a> |
+    <a href="books.html">Książki</a> |
+    <a href="authors.html">Autorzy</a> |
+    <a href="members.html">Czytelnicy</a> |
+    <a href="borrowings.html">Wypożyczenia</a> |
+    <a href="publishers.html">Wydawcy</a>
+  </div>
+
+  <form id="bookForm">
+    <label>Title: <input type="text" name="title" required></label><br><br>
+    <label>ISBN: <input type="text" name="isbn"></label><br><br>
+	<label for="publisherSelect">Wybierz wydawcę:</label>
+      <select id="publisherSelect" required></select><br><br>
+    <label for="categorySelect">Wybierz kategorię:</label>
+      <select id="categorySelect" required></select><br><br>
+    <label>Publication Year: <input type="number" name="publication_year" required></label><br><br>
+    <label>Language: <input type="text" name="language" required></label><br><br>
+    <label>Page Count: <input type="number" name="page_count" required></label><br><br>
+    <label>Description:<br>
+      <textarea name="description" rows="4" cols="50"></textarea>
+    </label><br><br>
+    <label>Total Copies: <input type="number" name="total_copies" required></label><br><br>
+
+    <label>Authors:<br>
+      <select name="author_ids" id="authorsSelect" multiple size="5" required></select>
+    </label><br><br>
+
+<!--
+    <label>Categories:<br>
+      <select name="category_ids" id="categoriesSelect" multiple size="5"></select>
+    </label><br><br>
+-->
+
+    <button type="submit">Create Book</button>
+  </form>
+ 
+  <!-- Book list -->
+  <div id="list-wrapper">
+    <ul id="book-list"></ul>
+  </div>
+
+  <script src="books.js"></script>
+</body>
+</html>

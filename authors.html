@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autorzy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!--
+  <h1><marquee behavior="scroll" direction="left">System Zarządzania Biblioteką</marquee></h1>
+  <span class="blinking">Witamy w systemie bibliotecznym!</span>
+-->
+  <!-- Górna ramka z linkami -->
+  <div id="top-bar">
+    <a href="categories.html">Kategorie</a> |
+    <a href="books.html">Książki</a> |
+    <a href="authors.html">Autorzy</a> |
+    <a href="members.html">Czytelnicy</a> |
+    <a href="borrowings.html">Wypożyczenia</a> |
+    <a href="publishers.html">Wydawcy</a>
+  </div>
+
+  <!-- Form to add new authors -->
+  <form id="author-form">
+    <label>Imię: <input type="text" id="first_name" placeholder="Imię" required /></label><br><br>
+    <label>Nazwisko: <input type="text" id="last_name" placeholder="Nazwisko" required /></label><br><br>
+    <label>Data urodzenia: <input type="date" id="birth_date" placeholder="BirthDate" required /></label><br><br>
+    <label>Biografia:<br>
+      <textarea name="biography" rows="4" cols="40"></textarea></label><br><br>
+    <button type="submit">Dodaj autora</button>
+  </form>
+
+
+  <!-- Author list -->
+  <div id="list-wrapper">
+    <ul id="author-list"></ul>
+  </div>
+
+  <script src="authors.js"></script>
+</body>
+</html>
