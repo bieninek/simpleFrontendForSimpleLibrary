@@ -11,7 +11,7 @@
 ///                                            ///
 //////////////////////////////////////////////////
 
-const apiUrl = 'http://localhost:3306/api/authors';  // Backend API URL
+const apiUrl = 'http://localhost:3301/api/authors';  // Backend API URL
 const list = document.getElementById('author-list');
 const form = document.getElementById('author-form');
 const firstNameInput = document.getElementById('first_name');

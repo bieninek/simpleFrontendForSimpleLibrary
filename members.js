@@ -12,7 +12,7 @@
 ///                                            ///
 //////////////////////////////////////////////////
 
-const apiUrl = 'http://localhost:3306/api/members';  // Backend API URL
+const apiUrl = 'http://localhost:3301/api/members';  // Backend API URL
 const list = document.getElementById('member-list');
 const form = document.getElementById('member-form');
 const firstNameInput = document.getElementById('first_name');

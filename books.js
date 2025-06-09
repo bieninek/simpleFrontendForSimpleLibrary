@@ -10,8 +10,8 @@
 ///                                                                   ///
 /////////////////////////////////////////////////////////////////////////
 
-const apiUrl = 'http://localhost:3306/api/books';  // Backend API URL
-const apiBaseUrl = 'http://localhost:3306/api';  // Backend API URL
+const apiUrl = 'http://localhost:3301/api/books';  // Backend API URL
+const apiBaseUrl = 'http://localhost:3301/api';  // Backend API URL
 const list = document.getElementById('book-list');
 const form = document.getElementById('book-form');
 const firstNameInput = document.getElementById('first_name');

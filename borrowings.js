@@ -12,8 +12,8 @@
 ///                                                                   ///
 /////////////////////////////////////////////////////////////////////////
 
-const apiUrl = 'http://localhost:3306/api/borrowings';  // Backend API URL
-const generalApiUrl = 'http://localhost:3306/api'; 
+const apiUrl = 'http://localhost:3301/api/borrowings';  // Backend API URL
+const generalApiUrl = 'http://localhost:3301/api'; 
 const list = document.getElementById('borrowing-list');
 
 // Fetch and display borrowings from the API
